@@ -20,13 +20,15 @@ define('ex', 'ตัวอย่างที่ 1 การสร้างฟอ
 @$value = $_GET['url'];
 switch ($value) {
 case "ex":
-    $breadcrumb = "ตัวอย่างการออกแบบฐานข้อมูล (Data dictionary)";
+    $breadcrumb = $title = "ตัวอย่างการออกแบบฐานข้อมูล (Data dictionary)";
     break;
 case "page1":
-     $breadcrumb = "ตัวอย่าง PHP INSERT Update Delete MySQL Data Through Bootstrap Modal";
+     $breadcrumb = $title = "ตัวอย่าง PHP INSERT Update Delete MySQL Data Through Bootstrap Modal";
     break;
 case "page2":
-     $breadcrumb = "ตัวอย่าง  การสร้างฟอร์มสมัคร";
+     $breadcrumb = $title = "ตัวอย่าง  การสร้างฟอร์มสมัคร";
     break;
+default:
+       $breadcrumb = $title = "ตัวอย่าง  การสร้างเว็บไซต์";	
 }
 ?>
